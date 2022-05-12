@@ -1,0 +1,112 @@
+/* CSS par défaut pour tous les types de device */
+body {
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.container {
+  padding: 1%;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#logo, nav {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#logo {
+  background-color: #0D47A1;
+}
+
+nav {
+  background-color: #1565C0;
+}
+
+main {
+  margin-bottom: 5px;
+}
+
+section, aside {
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: #64B5F6;
+}
+
+aside {
+  background-color: #90CAF9;
+}
+
+.col {
+  padding:25px;
+  box-sizing: border-box;
+  background-color: #E3F2FD;
+}
+
+.col:nth-child(odd) {
+  background-color: #BBDEFB;
+}
+
+/* CSS à appliquer pour les écrans >= 768px */
+@media screen and (min-width: 768px) { 
+  .col {
+    display: inline-block;
+    width: 33.33%;
+  }
+}
+
+/* CSS à appliquer pour les écrans desktop >= 1024px */
+@media screen and (min-width: 1024px) { 
+
+  .float-left {
+  	float: left;
+  }
+  
+  .float-right {
+  	float: right;
+  }
+  
+  #logo {
+    width: 20%;
+  }
+  
+  nav {
+    width: 80%;
+  }
+  
+  section {
+    width: 70%;
+  }
+  
+  aside {
+    width: 30%;
+  }
+  
+}
+
+/* CSS à appliquer pour les écrans desktop larges > 1200px */
+@media screen and (min-width: 1200px) { 
+  
+  .container {
+  	max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+}

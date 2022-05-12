@@ -1,0 +1,111 @@
+/* CSS par défaut pour tous les types de device */
+body {
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+header {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#logo, nav {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#logo {
+  background-color: #0D47A1;
+  width: 20%;
+}
+
+nav {
+  background-color: #1565C0;
+  width: 80%;
+}
+
+main {
+  margin-bottom: 5px;
+}
+
+section, aside {
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: #64B5F6;
+  width: 70%;
+}
+
+aside {
+  background-color: #90CAF9;
+  width: 30%;
+}
+
+.col {
+  display: inline-block;
+  width: 33.33%;
+  padding:25px;
+  box-sizing: border-box;
+  background-color: #E3F2FD;
+}
+
+.col:nth-child(odd) {
+  background-color: #BBDEFB;
+}
+
+/* CSS à appliquer pour les écrans desktop < 1200px */
+@media screen and (max-width: 1199px) { 
+  .container {
+    max-width: auto;
+    padding: 1%;
+  }
+}
+
+/* CSS à appliquer pour les écrans < 1024px */
+@media screen and (max-width: 1023px) { 
+
+  .float-left, .float-right {
+  	float: none;
+  }
+  
+  #logo, nav, section, aside {
+    width: 100%;
+  }
+  
+}
+
+/* CSS à appliquer pour les écrans < 768px */
+@media screen and (max-width: 767px) {
+  
+  .col {
+    display: block;
+    width: 100%;
+  }
+  
+}
